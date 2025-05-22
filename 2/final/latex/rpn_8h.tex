@@ -1,0 +1,38 @@
+\doxysection{rpn.\+h File Reference}
+\hypertarget{rpn_8h}{}\label{rpn_8h}\index{rpn.h@{rpn.h}}
+
+
+Заголовочный файл для работы с обратной польской нотацией (RPN).  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrpn_1_1_node}{rpn\+::\+Node}}
+\begin{DoxyCompactList}\small\item\em Узел дерева разбора RPN-\/выражения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{rpn_8cpp_ac626d42f9860f0719a5b363fdfb23dc3}\label{rpn_8cpp_ac626d42f9860f0719a5b363fdfb23dc3} 
+void {\bfseries rpn\+::cleanup\+Stack} (std\+::stack$<$ \mbox{\hyperlink{structrpn_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \&s)
+\begin{DoxyCompactList}\small\item\em Очищает стек узлов, удаляя все объекты \doxylink{structrpn_1_1_node}{Node}. \end{DoxyCompactList}\item 
+\Hypertarget{rpn_8cpp_a2cd96ca236a42b6d57e922ad5dbac90e}\label{rpn_8cpp_a2cd96ca236a42b6d57e922ad5dbac90e} 
+\mbox{\hyperlink{structrpn_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries rpn\+::build\+Tree} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Строит дерево разбора из файла с RPN-\/выражением. \end{DoxyCompactList}\item 
+\Hypertarget{rpn_8cpp_aa88db3b25ca5307e2db0c0eb297ae047}\label{rpn_8cpp_aa88db3b25ca5307e2db0c0eb297ae047} 
+bool {\bfseries rpn\+::eval} (\mbox{\hyperlink{structrpn_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}node, int \&result)
+\begin{DoxyCompactList}\small\item\em Рекурсивно вычисляет значение RPN-\/выражения в дереве. \end{DoxyCompactList}\item 
+\Hypertarget{rpn_8cpp_a0ff23a88fb9fa2168107e65af66ac9ec}\label{rpn_8cpp_a0ff23a88fb9fa2168107e65af66ac9ec} 
+void {\bfseries rpn\+::eliminate\+Divisions} (\mbox{\hyperlink{structrpn_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}\&node)
+\begin{DoxyCompactList}\small\item\em Упрощает дерево, вычисляя узлы операций \textquotesingle{}/\textquotesingle{} и \textquotesingle{}\textquotesingle{}. \end{DoxyCompactList}\item 
+\Hypertarget{rpn_8cpp_a363d921ab3828f6d62e6018e2a3137d8}\label{rpn_8cpp_a363d921ab3828f6d62e6018e2a3137d8} 
+void {\bfseries rpn\+::print\+Tree\+Infix} (\mbox{\hyperlink{structrpn_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}node, std\+::ostream \&out)
+\begin{DoxyCompactList}\small\item\em Выводит дерево в инфиксной форме для отладки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл для работы с обратной польской нотацией (RPN). 
+

@@ -1,0 +1,37 @@
+\doxysection{rpn.\+h}
+\hypertarget{rpn_8h_source}{}\label{rpn_8h_source}\mbox{\hyperlink{rpn_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ RPN\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ RPN\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stack>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }rpn\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }Node\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structrpn_1_1_node_ac4e71cf09b9945f38b4435ccf853acfa}{val}};\ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{structrpn_1_1_node_ae46b154244cf200c364587421e6f8523}{left}};\ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{structrpn_1_1_node_ae17e62c7f37ab5c633873e8bd7cb6b61}{right}};\ \ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ Node(\textcolor{keywordtype}{int}\ v);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \string~Node();}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ cleanupStack(std::stack<Node*>\&\ s);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structrpn_1_1_node}{Node}}*\ buildTree(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ eval(\mbox{\hyperlink{structrpn_1_1_node}{Node}}*\ node,\ \textcolor{keywordtype}{int}\&\ result);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ eliminateDivisions(\mbox{\hyperlink{structrpn_1_1_node}{Node}}*\&\ node);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ printTreeInfix(\mbox{\hyperlink{structrpn_1_1_node}{Node}}*\ node,\ std::ostream\&\ out);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \}\ \textcolor{comment}{//\ namespace\ rpn}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RPN\_H}}
+
+\end{DoxyCode}

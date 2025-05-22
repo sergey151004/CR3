@@ -1,0 +1,43 @@
+\doxysection{Cities\+Graph Class Reference}
+\hypertarget{class_cities_graph}{}\label{class_cities_graph}\index{CitiesGraph@{CitiesGraph}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ int $>$ \mbox{\hyperlink{class_cities_graph_a2141415fe34c89eb6e56d0ea695b02e7}{Get\+Reachable\+Cities}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix, int start\+\_\+city, int max\+\_\+intermediate)
+\begin{DoxyCompactList}\small\item\em Находит города, достижимые из заданного города через ≤L промежуточных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cities_graph_a2141415fe34c89eb6e56d0ea695b02e7}\index{CitiesGraph@{CitiesGraph}!GetReachableCities@{GetReachableCities}}
+\index{GetReachableCities@{GetReachableCities}!CitiesGraph@{CitiesGraph}}
+\doxysubsubsection{\texorpdfstring{GetReachableCities()}{GetReachableCities()}}
+{\footnotesize\ttfamily \label{class_cities_graph_a2141415fe34c89eb6e56d0ea695b02e7} 
+vector$<$ int $>$ Cities\+Graph\+::\+Get\+Reachable\+Cities (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{, }\item[{int}]{start\+\_\+city}{, }\item[{int}]{max\+\_\+intermediate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Находит города, достижимые из заданного города через ≤L промежуточных. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Матрица смежности. \\
+\hline
+{\em start\+\_\+city} & Стартовый город (1-\/индексация). \\
+\hline
+{\em max\+\_\+intermediate} & Максимальное число промежуточных городов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор достижимых городов. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument,out\+\_\+of\+\_\+range} & При некорректных данных. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cities_graph_8h}{Cities\+Graph.\+h}}\item 
+\mbox{\hyperlink{_cities_graph_8cpp}{Cities\+Graph.\+cpp}}\end{DoxyCompactItemize}
